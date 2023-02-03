@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "477056148124",
+    "project_id": "tily-49633",
+    "storage_bucket": "tily-49633.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477056148124:android:ab8a6f415fc7d6315bc359",
+        "android_client_info": {
+          "package_name": "com.brizaldi.flutter_project_template_riverpod"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "477056148124-iibc0uku4hjd338kdf5ehdm61pptdjgt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCogVHyPsbWKn7meggE2mHGfpHUboXm_0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "477056148124-iibc0uku4hjd338kdf5ehdm61pptdjgt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "477056148124-2slu7mr8q47elosskptdf0seb96rauul.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sheero.tily"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477056148124:android:34c12433df4f17505bc359",
+        "android_client_info": {
+          "package_name": "com.sheero.tily"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "477056148124-iibc0uku4hjd338kdf5ehdm61pptdjgt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCogVHyPsbWKn7meggE2mHGfpHUboXm_0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "477056148124-iibc0uku4hjd338kdf5ehdm61pptdjgt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "477056148124-2slu7mr8q47elosskptdf0seb96rauul.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sheero.tily"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
