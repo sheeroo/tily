@@ -1,4 +1,4 @@
-package com.brizaldi.flutter_project_template_riverpod
+package com.sheero.tily
 
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
