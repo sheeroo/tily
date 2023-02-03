@@ -25,6 +25,7 @@ class SignInForm extends HookConsumerWidget {
               prefixIcon: Icon(Icons.email),
               labelText: 'Email',
             ),
+            initialValue: 'sirogiannisgiw@gmail.com',
             keyboardType: TextInputType.emailAddress,
             onChanged: (value) => ref
                 .read(signInFormNotifierProvider.notifier)
@@ -46,6 +47,7 @@ class SignInForm extends HookConsumerWidget {
               labelText: l10n.password,
             ),
             obscureText: true,
+            initialValue: "Alvanos10.",
             onChanged: (value) => ref
                 .read(signInFormNotifierProvider.notifier)
                 .changePassword(value),

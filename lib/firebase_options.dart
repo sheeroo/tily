@@ -47,30 +47,30 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBafF6mrEvMuiLFWyEZCNAMpC9Nx1nfB_0',
-    appId: '1:477056148124:web:76a49d3eb49baa5b5bc359',
-    messagingSenderId: '477056148124',
-    projectId: 'tily-49633',
-    authDomain: 'tily-49633.firebaseapp.com',
-    storageBucket: 'tily-49633.appspot.com',
-    measurementId: 'G-0R2K02EPZ8',
+    apiKey: 'AIzaSyBgI6nhs8K11qRORK4qXhznyqd1s_Mnzo4',
+    appId: '1:116243941422:web:41cedd5a50fe71c59577bf',
+    messagingSenderId: '116243941422',
+    projectId: 'tily-f6b7b',
+    authDomain: 'tily-f6b7b.firebaseapp.com',
+    storageBucket: 'tily-f6b7b.appspot.com',
+    measurementId: 'G-Y5TQ51TRED',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBCogVHyPsbWKn7meggE2mHGfpHUboXm_0',
-    appId: '1:477056148124:android:34c12433df4f17505bc359',
-    messagingSenderId: '477056148124',
-    projectId: 'tily-49633',
-    storageBucket: 'tily-49633.appspot.com',
+    apiKey: 'AIzaSyCGP_dvRqBYS8SUBjZJm9J4tNyYmKQiJqI',
+    appId: '1:116243941422:android:ccf21ffd0513d62e9577bf',
+    messagingSenderId: '116243941422',
+    projectId: 'tily-f6b7b',
+    storageBucket: 'tily-f6b7b.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDfTcLyXj49dXZppdfLT5ZEkVmZTws3BcA',
-    appId: '1:477056148124:ios:8e7e8007a6bb06a65bc359',
-    messagingSenderId: '477056148124',
-    projectId: 'tily-49633',
-    storageBucket: 'tily-49633.appspot.com',
-    iosClientId: '477056148124-2slu7mr8q47elosskptdf0seb96rauul.apps.googleusercontent.com',
+    apiKey: 'AIzaSyBLQ_wH9Hob1dUfhh9aSig-nJ_pnV986Po',
+    appId: '1:116243941422:ios:000c50767453c2a19577bf',
+    messagingSenderId: '116243941422',
+    projectId: 'tily-f6b7b',
+    storageBucket: 'tily-f6b7b.appspot.com',
+    iosClientId: '116243941422-d1luphqtttc174bot043lrvbuu1u5dk5.apps.googleusercontent.com',
     iosBundleId: 'com.sheero.tily',
   );
 }

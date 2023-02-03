@@ -65,6 +65,7 @@ dependencies:
 
   #* Misc
   dartz: ^0.10.1
+  firebase_auth: ^4.2.5
 
 dev_dependencies:
   change_app_package_name: ^1.1.0

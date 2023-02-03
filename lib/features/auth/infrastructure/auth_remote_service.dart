@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 import '../../core/infrastructure/dio_extensions.dart';
 import '../../core/infrastructure/exceptions.dart';
@@ -11,7 +12,7 @@ class AuthRemoteService {
 
   Future<void> signOut() async {
     try {
-      await _dio.get<dynamic>('logout');
+      await FirebaseAuth.instance.signOut();
     } on DioError catch (e) {
       if (e.isNoConnectionError || e.isConnectionTimeout) {
         throw NoConnectionException();
@@ -28,31 +29,16 @@ class AuthRemoteService {
     required String password,
   }) async {
     try {
-      final response = await _dio.post<Map<String, dynamic>>(
-        'login',
-        data: <String, String>{
-          'email': email,
-          'password': password,
-        },
-      );
+      final userCredential = await FirebaseAuth.instance
+          .signInWithEmailAndPassword(email: email, password: password);
+      final user = userCredential.user;
+      if (user != null) {
+        final user = userCredential.user;
+        final token = await user!.getIdToken();
 
-      if (response.statusCode == 201) {
-        final token = response.data?['token'] as String?;
-
-        if (token != null) {
-          return AuthResponse.withToken(token);
-        } else {
-          return const AuthResponse.failure(
-            errorCode: 404,
-            message: 'Credential token not found',
-          );
-        }
+        return AuthResponse.withToken(token);
       } else {
-        final message = response.data?['message'] as String?;
-        return AuthResponse.failure(
-          errorCode: response.statusCode,
-          message: message,
-        );
+        return const AuthResponse.failure();
       }
     } on DioError catch (e) {
       if (e.isNoConnectionError || e.isConnectionTimeout) {

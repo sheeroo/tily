@@ -38,7 +38,6 @@ class AuthRepository {
     try {
       final emailStr = email.getOrCrash();
       final passwordStr = password.getOrCrash();
-
       final authResponse = await _remoteService.signIn(
         email: emailStr,
         password: passwordStr,
